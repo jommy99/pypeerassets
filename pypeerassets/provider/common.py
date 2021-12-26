@@ -63,9 +63,9 @@ class Provider(ABC):
         '''sendrawtransaction remote API'''
 
         if cls.is_testnet:
-            url = 'https://testnet-explorer.peercoin.net/api/sendrawtransaction?hex={0}'.format(rawtxn)
+            url = 'https://explorer.thepandacoin.net/api/sendrawtransaction?hex={0}'.format(rawtxn)
         else:
-            url = 'https://explorer.peercoin.net/api/sendrawtransaction?hex={0}'.format(rawtxn)
+            url = 'https://chainz.cryptoid.info/pnd/api.dws?q=pushtx&key=1205735eba8c'.format(rawtxn)
 
         resp = urllib.request.urlopen(url)
         return resp.read().decode('utf-8')

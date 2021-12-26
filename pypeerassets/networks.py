@@ -67,6 +67,31 @@ PeercoinMainnet = Constants(
     op_return_max_bytes=256
 )
 
+PandacoinMainnet = Constants(
+    name='pandacoin',
+    shortname='pnd',
+    base58_prefixes={
+        'P': 'p2pkh',
+        'p': 'p2sh',
+    },
+    base58_raw_prefixes={
+        'p2pkh': bytearray(b'\x37'),
+        'p2sh': bytearray(b'\x75'),
+    },
+    bech32_hrp='pn',
+    bech32_net='mainnet',
+    xkeys_prefix='x',
+    xpub_version=b'\x04\x88\xb2\x1e',
+    xprv_version=b'\x04\x88\xad\xe4',
+    wif_prefix=0xb7,
+    from_unit=Decimal('1e-6'),
+    to_unit=Decimal('1e6'),
+    min_tx_fee=Decimal(5.000),
+    tx_timestamp=True,
+    tx_out_cls=PeercoinTxOut,
+    op_return_max_bytes=256
+)
+
 
 PeercoinTestnet = Constants(
     name='peercoin-testnet',
@@ -87,14 +112,14 @@ PeercoinTestnet = Constants(
     wif_prefix=0xef,
     from_unit=Decimal('1e-6'),
     to_unit=Decimal('1e6'),
-    min_tx_fee=Decimal(0.001),
+    min_tx_fee=Decimal(0.01),
     tx_timestamp=True,
     tx_out_cls=PeercoinTxOut,
     op_return_max_bytes=256
 )
 
 
-networks = (PeercoinMainnet, PeercoinTestnet,)
+networks = (PeercoinMainnet, PandacoinMainnet, PeercoinTestnet,)
 
 
 def net_query(name: str) -> Constants:

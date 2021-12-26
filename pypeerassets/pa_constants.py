@@ -22,11 +22,15 @@ params = (
     PAParams("peercoin", "ppc", "U624wXL6iT7XZ9qeHsrtPGEiU78V1YxDfwq75Mymd61Ch56w47KE",
              "PAprodbYvZqf4vjhef49aThB9rSZRxXsM6", "UAbxMGQQKmfZCwKXAhUQg3MZNXcnSqG5Z6wAJMLNVUAcyJ5yYxLP",
              "PAtesth4QreCwMzXJjYHBcCVKbC4wjbYKP", Decimal(0.01)),
+## PND mainnet
+PAParams("pandacoin", "pnd", "U5vPmrnvd2tQEmA4K9WJDpPChVxEQqxegnGpGe72rMpaWm9sFZFn",
+         "PW8RpmJd5A8d8463g2HinboHRkW7mQDvHW", "UAbxMGQQKmfZCwKXAhUQg3MZNXcnSqG5Z6wAJMLNVUAcyJ5yYxLP",
+         "PAtesth4QreCwMzXJjYHBcCVKbC4wjbYKP", Decimal(15.01)),
 
     ## PPC testnet
     PAParams("peercoin-testnet", "tppc", "cTJVuFKuupqVjaQCFLtsJfG8NyEyHZ3vjCdistzitsD2ZapvwYZH",
              "miHhMLaMWubq4Wx6SdTEqZcUHEGp8RKMZt", "cQToBYwzrB3yHr8h7PchBobM3zbrdGKj2LtXqg7NQLuxsHeKJtRL",
-             "mvfR2sSxAfmDaGgPcmdsTwPqzS6R9nM5Bo", Decimal(0.001))
+             "mvfR2sSxAfmDaGgPcmdsTwPqzS6R9nM5Bo", Decimal(0.01))
 )
 
 

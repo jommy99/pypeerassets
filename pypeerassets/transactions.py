@@ -279,7 +279,7 @@ def make_raw_transaction(
 
     network_params = net_query(network)
 
-    if network_params.name.startswith("peercoin"):
+    if network_params.name.startswith("p"):
         return MutableTransaction(
             version=version,
             ins=inputs,
